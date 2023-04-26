@@ -1,0 +1,73 @@
+.hamburger-menu-icon {
+  cursor: pointer;
+  display: none;
+}
+/*Sticky nav bar  */
+.nav-bar.sticky {
+  z-index: 9;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5));
+}
+/* Scroll into view */
+
+.section-hidden-left {
+  opacity: 0;
+  transform: translateX(-30rem);
+}
+
+.section-hidden-top{
+  opacity: 0;
+  transform: translateY(30rem);
+}
+
+.section-hidden-bottom {
+  opacity: 0;
+  transform: translateY(-30rem);
+}
+
+.section-hidden-right {
+  opacity: 0;
+  transform: translateX(30rem);
+}
+
+.section-hidden-opacity {
+  opacity: 0;
+}
+
+.hide {
+  display: none;
+}
+.trainer-photo-blured {
+  filter: blur(1.5rem);
+}
+
+/* Go top icon */
+.go-top {
+  position: fixed;
+  z-index: 5;
+  bottom: 6rem;
+  right: 6rem;
+  height: 8rem;
+  width: auto;
+  cursor: pointer;
+  animation: goTop 1s linear infinite;
+}
+
+@keyframes goTop {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
